@@ -1,0 +1,221 @@
+@font-face {
+    font-family : Norse-Bold;
+    src : url(fonts/Norse-Bold.otf);
+}
+
+body {
+    margin : 0;
+    padding : 0;
+    background-color : #f9fafbbb;
+    font-family: sans-serif;
+}
+
+.page-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin : 0;
+}
+
+/* picture-section */ 
+
+.picture-section { 
+    width: 35%;
+    height: 100%;
+    background-image: url(images/the-image.jpg);
+    background-size : cover;
+    background-position: center;
+    position : relative;
+    display: flex;
+    justify-content: center;
+}
+
+.odin-logo {
+    background-color : black;
+    opacity : 0.5;
+    width : 100%;
+    height : 120px;
+    position : absolute;
+    bottom : 65%;
+    display: flex;
+    justify-content: center;
+    padding : 20px 0px;
+}
+
+
+
+.odin-logo p {
+    font-size: 80px;
+    color : #ffffff;
+    font-weight: bold;
+    font-family : Norse-Bold;
+    align-self: center;
+    margin : 0px;
+
+}
+
+.odin-logo img {
+
+    width: 93px;
+    height: 125px;
+
+}
+
+
+
+.credit span {
+    text-decoration: underline;
+
+}
+.credit {
+position : absolute;
+color : #ffffff;
+bottom : 0;
+text-align: center;
+}
+
+
+
+
+/* form-section */ 
+
+    /* general */ 
+
+    .form-section {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .form-header {
+        height : 35%;
+        font-weight: bold;
+        gap : 10px;
+        position : relative;
+    
+    }
+
+    form {
+        height : 30%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border : 1px solid whitesmoke;
+        box-shadow : 0px 5px 5px 4px rgb(0 0 0 / 10%);
+    }
+    
+    footer {
+        height : 30%;
+    }
+
+
+    /* header */ 
+
+.first-paragraph, .second-paragraph {
+    width : 75%;
+    font-size : 1.4rem;
+    position : absolute;
+    left : 5%;
+    line-height: 1.3 ;
+}
+
+.first-paragraph {
+    bottom : 25%;
+}
+
+.second-paragraph {
+    bottom : 7%;
+}
+
+.form-header p span {
+    font-style : italic;
+}
+
+
+
+    /* form  */ 
+
+form p {
+    font-size : 1.1rem;
+    margin-left : 10px;
+    padding-left: 40px;
+}
+
+.greeting {
+    font-weight: 700;
+}
+
+.id1, .id2, .id3 {
+    display: flex;
+    margin : 10px;
+}
+
+label {
+    font-size : 0.7rem;
+    letter-spacing: 0.1rem;
+}
+input {
+    border : 1px solid #E5E7EB; 
+    width: 240px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border : 1px solid blue;
+    box-shadow : 0px 0px 2px;
+}
+
+button {
+    background-color: #596D48;
+    color : #ffffff;
+    padding : 10px;
+    border-radius : 10px;
+    width : 250px;
+    height : 50px;
+    font-weight: bold;
+    font-size : 1.1rem;
+    margin-top : 70px;
+    margin-left : 40px;
+}
+
+form span {
+    color : #596D48;
+    font-weight: bold;;
+}
+
+
+
+
+
+    /* validation */ 
+
+    input:invalid {
+        border : 1px solid red;
+    }
+
+    input + span {
+        position : relative;
+    }
+
+    input:invalid + span::after {
+        position : absolute;
+        top : 25px;
+        right : 30px;
+        width: 200px;
+        padding : 5px 10px;
+        color : red;
+        content : "* The password is required";
+        font-size : 12px;
+        font-weight: lighter;
+    }
+
+
+
+
+
